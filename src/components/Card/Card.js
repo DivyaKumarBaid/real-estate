@@ -10,8 +10,13 @@ export default function Card({obj}) {
 
   const [like, setLike] = React.useState(false);
 
+  // toggles like btn
   const toggle=() => { 
     setLike(old => !old);
+  }
+  
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
   return (
@@ -23,7 +28,7 @@ export default function Card({obj}) {
           <div className="rentalInfo">
             <div className="price">
               <div className="amt">
-                <span className="pricing">{'$'+obj.price}</span> / month
+                <span className="pricing">{'$'+numberWithCommas(obj.price)}</span> / month
               </div>
               <div className="heart">
                 {!like?<AiOutlineHeart className='heartSym' onClick={()=>{toggle()}}/>:<AiFillHeart className='heartSym' onClick={()=>{toggle()}}/>}
@@ -34,6 +39,9 @@ export default function Card({obj}) {
             </div>
             <div className="address">
               {obj.address}
+            </div>     
+            <div className="country">
+              {obj.country}
             </div>     
           </div>
           <div className="houseInfo">

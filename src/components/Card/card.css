@@ -60,7 +60,7 @@ font-family: 'Noto Sans', sans-serif;
     font-size: 0.7em;
     font-family: 'Noto Sans', sans-serif;
 }
-.rentalInfo .name,.rentalInfo .price,.rentalInfo .address{
+.rentalInfo .name,.rentalInfo .price,.rentalInfo .address,.rentalInfo .country{
     font-family: 'Montserrat', sans-serif;
 }
 .rentalInfo .name{
@@ -68,9 +68,12 @@ font-family: 'Noto Sans', sans-serif;
     font-size: 1.15em;
     font-weight: 600;
 }
-.rentalInfo .address{
+.rentalInfo .address,.rentalInfo .country{
     font-weight: 400;
     font-size:0.8em;
+}
+.rentalInfo .country{
+    font-weight:600;
 }
 .rentalInfo .price{
     font-size:0.8em;
@@ -81,6 +84,7 @@ font-family: 'Noto Sans', sans-serif;
 .pricing{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    letter-spacing:1px;
     font-size:1.4em;
     color: var(--base);
 }
