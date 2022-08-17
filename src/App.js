@@ -5,6 +5,7 @@ import Data from './data/houseData1.json'
 import Filter from './components/filter/Filter';
 import {ImLocation2} from 'react-icons/im'
 import {BsHouseFill} from 'react-icons/bs'
+import {GiTreehouse} from 'react-icons/gi'
 import DatePickerComponent from './components/filter/DatePickerComponent';
 import RangeSlider from './components/filter/RangeSlider';
 
@@ -75,6 +76,19 @@ export default function App() {
 
   return (
     <div className="container">
+      <div className="navBar">
+        <div className="company">
+          <GiTreehouse style={{color:'var(--base)',fontSize:'1.5em',marginRight:'12px'}} />
+          Reel-Estate
+        </div>
+      </div>
+      <div className="landing">
+        <div className="landingText">
+          Buy, Sell, Rent Property<br />without any hussle.
+        </div>
+        <div className="imageDiv" style={ {backgroundImage:'url(assets/homeHero.jpg)'}}></div>
+      </div>
+
       <div className="filter">
 
         <Filter
