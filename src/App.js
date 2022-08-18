@@ -33,8 +33,8 @@ export default function App() {
   const [movein, setMove] = React.useState("");
 
   // options for select
-  const [arrayLoc, setArray] = React.useState(['','Germany','Canada','United States','Australia']);
-  const [houseArray, sethouseArray] = React.useState(['','house', 'appartment']);
+  const [arrayLoc, setArray] = React.useState(['Germany','Canada','United States','Australia']);
+  const [houseArray, sethouseArray] = React.useState(['house', 'appartment']);
   // options for select
   
   // handles location filter
