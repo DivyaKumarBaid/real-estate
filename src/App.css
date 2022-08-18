@@ -25,7 +25,8 @@ font-family: 'Noto Sans', sans-serif;
   align-items: center;
   height: 75vh;
   width:80%;
-  font-size: 4em;
+  font-size: 3.5em;
+  font-weight: 600;
   color: var(--base);
   font-family: 'Montserrat', sans-serif;
 }
@@ -84,6 +85,9 @@ font-family: 'Noto Sans', sans-serif;
   font-size:1.2em;
   font-family: 'Montserrat', sans-serif;
 }
+.landingText{
+  max-width: 50%;
+}
 
 /* navbar */
 /*mobile view */
@@ -93,5 +97,13 @@ font-family: 'Noto Sans', sans-serif;
   }
   .imageDiv{
     display: none;
+  }
+  .landing{
+    font-size: 2.3em;
+  }
+  .landingText{
+    line-height: 1.8em;
+    text-align: center;
+    max-width: 100%;
   }
 }
