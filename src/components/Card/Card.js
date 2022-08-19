@@ -26,6 +26,9 @@ export default function Card({obj}) {
       </div>
         <div className="info">
           <div className="rentalInfo">
+            <div className="houseType">
+              {obj.house}
+            </div>
             <div className="price">
               <div className="amt">
                 <span className="pricing">{'$'+numberWithCommas(obj.price)}</span> / month
